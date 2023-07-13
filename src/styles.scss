@@ -1,1 +1,28 @@
 /* You can add global styles to this file, and also import other style files */
+@import "@coreui/coreui/scss/coreui";
+
+*{
+    box-sizing: border-box;
+    text-decoration: none !important;
+}
+*{
+    margin: 0;
+}
+  Ul  li   {
+    List-style: none;
+}
+
+a p{
+ letter-spacing: 0.5px;
+ outline: none;
+ color: white !important;
+ text-decoration: none;
+}
+
+body, html {
+width: 100%;
+max-width: 1920px;
+margin: 0 auto;
+height: 100%;
+
+}
