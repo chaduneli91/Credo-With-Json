@@ -13,14 +13,19 @@
     padding: 0 3%;
     justify-content: space-between;
     background-color: white;
-
+    position: relative;
 }
 
 .image-credo{
     width: 262px;
     height: 41px;
 }
-.numberss{
+.header-section{
+    display: flex;
+    gap: 1.56em;
+}
+.header-second-section{
+    
     display: flex;
     align-items: center;
     gap: 1.56em; // 25px;
@@ -76,9 +81,6 @@
 }
 
 .menu-container{
-    //top: 2rem;
-    //background: #243e76;
-    //height: 140px;
     border-radius: 3em;
     align-items: baseline;
     cursor: pointer;
@@ -131,7 +133,6 @@
     position: absolute;
     z-index: 1;
     line-height: 1.9em;
-
 }
 .internet-menu{
     position: absolute;
@@ -145,7 +146,6 @@
     align-items: center;
     gap: 5px;
     position: relative;
-
 }
 .pysical::before{
     content: '';
@@ -168,11 +168,13 @@
 }
 .legal{
     display: flex;
-    align-items: center;
     font-size: 0.9em;
-    justify-content: space-between;
+    align-items: center;
     gap: 5px;
-
+    
+    
+    
+    
 }
 
 .legal::before{
@@ -191,14 +193,13 @@
     width: 0.9em;
     background-size: cover ;
     background-repeat: no-repeat;
-
+    
 }
-
 
 // ქვედა ჰედერი
 
 .primary-menu{
-    height: 3.8rem;
+    height: 3.8em;
     width: 100%;
     background: #ea4b37;
     position: relative;
@@ -208,6 +209,8 @@
     height: 100%;
     padding: 0 11.3%;
     display: flex;
+    flex-wrap: wrap;
+    
 }
 .navigation-ul{
     display: flex;
@@ -216,8 +219,6 @@
     flex-wrap: wrap;
 
 }
-
-
 .nav-a{
     width: 100%;
     height: 100%;
@@ -235,18 +236,14 @@
     color: #ea4b37 !important;
     cursor: default;
     animation-fill-mode: forwards;
-
   }
 
   .nav-a.pointer:hover {
     background-color: white;
     color: #ea4b37;
     cursor: pointer;
-
   }
 }
-
-
 //dropdown section
 
 //  ესაა მაუსის მიტანაზე ჩამოშლის კლასები
@@ -535,3 +532,134 @@
     visibility: hidden;
     opacity: 0;
  }
+
+
+ /* responsive*/
+
+
+    .mobile-menu{
+        display: none;
+    }
+
+    @media screen and (max-width: 760px) {
+
+        /*mobile menu styles*/
+            .header-basic-container{
+                display: flex;
+                justify-content: space-between;
+                height: 4.5em;
+            }
+            .mobile-menu{
+                display: flex;
+            }
+            .header-second-section{
+                display: none;
+            }
+            .primary-menu{
+                display: none;
+            }
+            .menu-container{
+                align-items: baseline;
+                cursor: pointer;
+                display: grid !important;
+                position: absolute;
+                top: 100%;
+                width: 100%;
+                left: 0;
+                .menu{
+                    border-radius: 0;
+                    display: grid;
+                    align-items: center;
+
+                }
+                .image-credo{
+                    height: 2em;
+                    display: flex;
+                    align-items: center;
+                }
+                .menu-toggler{
+                    border-radius: 0;
+                    display: flex;
+                    justify-content: center;
+                    height: 3.8rem;
+                }
+                .internet-menu{
+                    display: grid;
+                    margin-top: 7px;
+                    padding: 0 1.3em 0 2em;
+                    width: 100%;
+                }
+                .menu-item{
+                    font-size: 1.2em;
+                    
+                }
+                .legal::after{
+                    content: '';
+                    position: absolute;
+                    right: 1.2em;
+                }
+                
+                
+            }
+            ::ng-deep { .p-sidebar-left {
+                top: 4.4em !important;
+                width: 80% !important;
+                    }
+                    .p-icon {
+                        display: none;
+                    }   
+                    .card{
+                        border: none;
+                        
+                       }
+                }
+        }
+       
+
+
+        @media screen and (max-width: 1200px) {
+            .general{
+                width: 100%;
+            }
+            .header-basic-container{
+                display: flex;
+                justify-content: space-between;
+                height: 3.5em;
+                position: relative;
+                width: 100%;
+            }
+            .image-credo{
+                height: 2em;
+                display: flex;
+                align-items: center;
+            }
+            .mobile-menu{
+                display: flex;
+            }
+            .header-second-section{
+                display: none;
+            }
+            .menu-container{
+                display: none;
+            }
+            .primary-menu{
+                display: none;
+            }
+            .primary-menu.active{
+                display: none;
+            }
+           .card{
+            border: none;
+            
+           }
+           ::ng-deep { .p-sidebar-left {
+            top: 3.5em !important;
+            width: 80% !important;
+                }
+                .p-icon {
+                    display: none;
+                }   
+            }
+        }
+
+

@@ -88,4 +88,8 @@
    
   }
   
-  
+  @media screen and (max-width: 1200px) {
+    .right-nav-container{
+      display: none;
+    }
+  }

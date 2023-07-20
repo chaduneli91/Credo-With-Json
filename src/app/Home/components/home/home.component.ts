@@ -31,6 +31,7 @@ export class HomeComponent implements OnInit {
       subtitle: 'გაიაქტიურე VISA ციფრული ბარათი უფასოდ Mycredo-დან, გადაიხადე უფრო კომფორტულად!',
       
     }
+    
     this.slides[1] = {
       id: 1,
       src: 'assets/HomeImage/2.png',
@@ -73,7 +74,7 @@ export class HomeComponent implements OnInit {
       title: 'ვრცლად',
       subtitle: 'ნუ დაკარგავ შემოსავალს! დააყენე Mycdredo  მობილური ტერმინალი და მიიღე საბარათე გადასახადები!'
     }
-    
+     
     
   }
 

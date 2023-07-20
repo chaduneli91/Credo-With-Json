@@ -11,7 +11,7 @@ export interface CredoInterface extends credoHome {
     productData?: {
         id: number;
         img?: string;
-        routerLink?: string;
+        link?: string;
         description: string}[];
 }
 

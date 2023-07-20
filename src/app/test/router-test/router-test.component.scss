@@ -1,5 +1,12 @@
-div{
-    width: 500px;
-    height: 700px;
-    background-color: green;
+@media screen and (max-width: 768px) {
+
+/*mobile menu styles*/
+    header .mobile-menu{
+        display: flex;
+    }
+    .header-section{
+        display: none;
+    }
 }
+
+

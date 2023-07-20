@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
@@ -10,9 +9,12 @@ import { FooterComponent } from './Footer/components/footer/footer.component';
 import { HeaderComponent } from './Header/components/header/header.component';
 import { RightNavContainerComponent } from './Right-nav-container/components/right-nav-container/right-nav-container.component';
 import { HomeComponent } from './Home/components/home/home.component';
-import { CarouselModule } from '@coreui/angular';
 import { RouterTestComponent } from './test/router-test/router-test.component';
 import { SecondRouterComponent } from './test/second-router/second-router.component';
+import { CarouselModule } from '@coreui/angular';
+import { SidebarModule } from 'primeng/sidebar';
+
+
 
 @NgModule({
   declarations: [
@@ -22,7 +24,8 @@ import { SecondRouterComponent } from './test/second-router/second-router.compon
     RightNavContainerComponent,
     HomeComponent,
     RouterTestComponent,
-    SecondRouterComponent
+    SecondRouterComponent,
+    
     
   ],
   imports: [
@@ -31,7 +34,9 @@ import { SecondRouterComponent } from './test/second-router/second-router.compon
     RouterModule,
     BrowserAnimationsModule,
     HttpClientModule,
-    CarouselModule
+    CarouselModule,
+    SidebarModule
+  
   ],
   providers: [],
   bootstrap: [AppComponent]

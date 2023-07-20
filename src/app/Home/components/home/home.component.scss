@@ -2,26 +2,26 @@
     padding-top: 9.4rem;
 }*/
 .credoTop{
+    background-image: url(https://credobank.ge/app/uploads/2023/01/anabrebi-web-banner-2.png);
+    background-size: cover ;
+    background-repeat: no-repeat;
     height: 24vw;
     width: 100%;
     margin-top: 9.4rem;
-    img{
-        width: 100%;
-        height: 100%;
-        border-bottom-left-radius: 6em;
-       
-    } 
+    overflow: hidden;
+    border-bottom-left-radius: 6em; 
 }
 .basic-list{
     padding: 0 11.3%;
-    margin-top: 1.5rem;
 }
-.list-items{
+.product-lists{
     display: flex;
-    gap: 1.4rem;
+    flex-wrap: wrap;
+    
     font-size: 0.9em;
     justify-content: space-between;
-    
+    padding: 2em 0;
+    letter-spacing: 0.5px;
 }
 .items{
     width: calc((100% - 8.125em)/5);
@@ -29,15 +29,20 @@
     padding-top: calc((100% - 8.125em)/5);
     position: relative;
     border-radius: 1.2em;
+    box-sizing: border-box;
     cursor: pointer;
     
     
     .little-img{
         position: absolute;
-        top: 30%;
-        left: 37.35%;
         min-height: 3.5em; 
         color: blue;
+        
+        top: 35%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        max-height: 4em;
+        max-width: 4em;
     }
     
     
@@ -45,15 +50,26 @@
 .description{ 
 
     position: absolute;
-    top: calc(35% + 4em);
+    top: calc(30% + 4em);
     width: 100%;
     padding: 0 1em;
     text-align: center;
     font-size: 1.1em;
     color: #00609c;
     margin-top: 1rem;
-    letter-spacing: 1px;
+    letter-spacing: 0.6px;
+
+
+    
+    left: 50%;
+    
+    transform: translateX(-50%);
+    
    
+    
+    
+
+
 }
 .items:hover {
     background: #ea4b37; 
@@ -70,7 +86,7 @@
 //shared
 
 .button{
-    padding: 0.75em 2.2em;
+    padding: 0.6em 1.8em;
     display: inline-block;
     border: 0;
     border-radius: 3em;
@@ -94,25 +110,40 @@
 .parent-slide-credo{
     width: 100%;
     height: 28vw;
+    padding: 0 13.5em;
     padding: 0 11.3%;
     display: flex;
+   
+    
+
     justify-content: space-between;
-    margin:1.8em 0 4.1em 0;
+    margin: 0 0 4.1em 0;
 }
+/*
 .special-offer-for-expats{
-    position: relative;
-    width: calc(33.333% - 1.5em);
+  
+    
 }
+*/
+
 .special-offer-basic-image{
+    background-image: url(../../../../assets/HomeImage/special-offer.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
     border-radius: 1.2em 1.2em 0;
-        height: 26.5vw;
-        cursor: pointer;
+    width: calc(33.333% - 1.5em);
+    height: 100%;
+    //height: 26.5vw;
+    cursor: pointer;
+    position: relative;
+    display: flex;
 }
 
 .in-detail-special-offer-button{
     position: absolute;
     left: 2em;
-    bottom: 3.9em;
+    bottom: 1.8em;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -122,8 +153,9 @@
         width: 10px;
        align-items: center;
        display: flex;
-       
     }
+  
+    z-index: 1;
 }
 .in-details-spans{
     font-size: 1em;
@@ -146,14 +178,16 @@
 
 .slide-button-text{
     color: white;
+
 }
 
 .carusel-parents{
     
     width: calc(68.4% - 1.5em) !important;
+    height: 100%;
+    
     border: 1px solid grey;
     border-radius:  1.2em 1.2em 0;
-    margin-bottom: 1.8em;
     overflow: hidden; 
 }
 
@@ -162,12 +196,17 @@
     cursor: pointer;
     
 }
-
+::ng-deep { .carousel-dark .carousel-indicators {
+            margin-left: 5% !important;
+            justify-content: flex-start;
+            
+        }
+    }
+    
 
 
 
 .carousel-caption{
-    
     position: relative;
     display: flex;
     width: calc(100% - 4rem);
@@ -196,11 +235,8 @@
         width: 10px;
        align-items: center;
        display: flex;
-    }
-    
+    }    
 }
-
-
 .button-child-a{
     display: flex;
     align-items: center;
@@ -209,18 +245,6 @@
 .button-carusel:hover{
     background-color: #db301a;
 }
-
-.carousel-descr{
-    font-size: 1.05em;
-    letter-spacing: 0.5px;
-    cursor: pointer;
-    color: #00609c;
-    //overflow: hidden;
-}
-
-
-
-
 /* Help */
 
 .contact-section{
@@ -298,7 +322,8 @@
 .news-section{
     margin-top: 3.75em;
     margin-bottom: 4.75em;
-    padding: 0 11.3%;
+    padding: 0 13.5em;
+    //padding: 0 11.3%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -312,13 +337,13 @@
 
 .media-room{
     margin-bottom: 1.15em;
-    font-size: 1.1em;
+    font-size: 1.25em;
     color: #00609c;
     line-height: 1.2;
 }
 
 .left-side{
-    min-height: 18em;
+    min-height: 21.2em;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -330,29 +355,19 @@
     border-radius: 1.2em 0 0 1.2em;
     border: 2px solid #d8d8d8;
     border-right: none;
-    padding: 1.6em 1.8em 1.5em;
     
+    padding: 1.8em 1.9em 1.5em;
 }
 
-.media-text1{
-    font-size: 1.2em;
+.media-text1{ 
     color: #00609c !important;
     margin: 1.1em 0 1.15em;
-    line-height: 1.1em;
+    line-height: 1.4em;
     display: block;
     cursor: pointer;
-}
-
-.media-text2{
     font-size: 1em;
-    color: #575757 !important;
-    
-    line-height: 1.5em;
-    cursor: pointer;
-    display: block;
+    letter-spacing: 0.5px;
 }
-
-
 
 .button-content{
     margin-top: 1.6em;
@@ -429,7 +444,7 @@
 }
 
 .photo-container{
-    background-image: url(https://credobank.ge/app/uploads/2022/10/490x400.jpg);
+    background-image: url(https://credobank.ge/app/uploads/2023/07/GEO-490x400-1.png);
     width: 48%;
     border-radius: 0 1.2em 0 0;
     overflow: hidden;
@@ -617,9 +632,129 @@
 }
 
 .heigh{
-   height: 18.2vw !important;
+   height: calc(27vw - 8.25em);
 }
 
-.carousel-indicators{
-    color: #db301a !important;
+
+
+
+
+@media screen and (max-width: 1200px) {
+    .credoTop{
+        margin-top: 3.5em;
+    }
+
+    .basic-list{
+        padding: 0 3%;
+    }
+    .description{
+        letter-spacing: 0.5px;
+        font-size: 1em;
+        top: calc(20% + 4em);
+    }
+    
+    .basic-list{
+        padding: 0 2em;
+    }
+    
+    .parent-slide-credo{
+        padding: 0 2em;
+        height: 36vw;
+        
+    }
+    .col{
+        font-size: 1em;
+        height: 2.6em !important;
+       
+    }
+    
+    .heigh{
+        height: calc(35vw - 8.25em);
+     }
+     .d-flex{
+        display: block !important;
+        padding-top: 2em;
+     }
+     
+     .carousel-dark{
+        bottom: 1em !important;
+     }
+     .button-carusel{
+        display: inline-block;
+     }
+     .news-section{
+        padding: 0 2em;
+     }
+     .news-container-left{
+        width: calc(70% - 1em);
+        min-height: 18em;
+     }
+
+    .button-text-2{
+        font-size: 0.8em;
+    }
+    .button22{
+        padding: 0.75em 1em;
+    }
+    .menu-toggler{
+        font-size: 0.8em;
+    }
+    .news-container-right{
+        width: calc(30% - 1em);
+    }
+    .media-room{
+        font-size: 1.1em;
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 760px) {
+    .basic-list{
+        display: none;
+    }
+    .credoTop{
+        min-height: 50vw;
+        height: auto;
+        border-bottom-left-radius: 0;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;   
+    }
+    .carusel-parents{
+        width: 100% !important;
+        height: 100vw;
+    }
+   
+    .parent-slide-credo{
+        display: flex;
+        flex-wrap: wrap;
+       padding: 0 2em;
+        height: auto;
+        margin: 4em 0 2em 0 ;
+    }
+    .special-offer-for-expats{
+        width: 100%;
+        height: 100vw;
+        margin-bottom: 1.5em;
+        
+    }
+    .special-offer-basic-image{
+        width: 100%;
+        height: 100vw;
+        margin-bottom: 1.5em;
+        //
+    }
+    
+}
+
