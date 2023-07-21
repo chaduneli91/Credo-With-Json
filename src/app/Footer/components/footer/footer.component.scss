@@ -135,3 +135,38 @@
     width: 2rem;
     background-color: #00609c;
 }
+
+
+
+
+
+@media screen and (max-width: 1200px) {
+
+
+    .top-container{
+        flex-wrap: wrap;
+        padding: 1.5em 2em 2.75em;
+      
+        }
+        .item{
+            line-height: 1.3em;
+        }
+    .footer-center{
+        display: none;
+    }
+    .footer-content{
+        padding: 0 2em;
+        height: 4.2em;
+    }
+    .footer-bottom-container{
+        height: 3em;
+    }
+    .content-right{
+        padding-top: 1em;
+        width: 100%;
+        ul{
+            padding-left: 0;
+            width: 50%;
+        }
+    }
+}
