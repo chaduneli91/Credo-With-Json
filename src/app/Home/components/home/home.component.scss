@@ -268,7 +268,7 @@
 }
 
 .contact-title::before {
-    Content: '';
+    content: '';
     position: absolute;
     width: 3em;
     height: 3px;
@@ -507,7 +507,7 @@
     font-size: 0.95em;
 }
 .menu-toggler::after {
-    Content: '';
+    content: '';
     background-image: url(../../../../assets/HomeImage/arrow/arrow-down.svg);
    
     background-size: cover ;
