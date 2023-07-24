@@ -235,14 +235,11 @@
     background-color: white !important;
     color: #ea4b37 !important;
     cursor: default;
-    animation-fill-mode: forwards;
+    
   }
-
-  .nav-a.pointer:hover {
-    background-color: white;
-    color: #ea4b37;
-    cursor: pointer;
-  }
+}
+.pointer{
+    cursor: pointer !important;
 }
 //dropdown section
 
@@ -336,6 +333,8 @@
 
 
 
+
+
 //dropdown section
 
 .menu-image-container{
@@ -400,17 +399,20 @@
     align-items: flex-end;
     position: relative;
 }
-.photo1{
-    background-image: url(https://credobank.ge/app/uploads/2018/12/fizikuri-1.jpg);
+.piggy{
+    background-image: url(../../../../assets/dropdown-image/about-credo/gochi.jpg);
 
 }
 
-.photo2{
-    background-image: url(https://credobank.ge/app/uploads/2018/12/fizikuri-2.jpg);
+.keyboard{
+    background-image: url(../../../../assets/dropdown-image/about-credo/keyboard.jpg);
 
 }
-.photo3{
-    background-image: url(https://credobank.ge/app/uploads/2018/12/biznes-7.jpg);
+.alert{
+    background-image: url(../../../../assets/dropdown-image/about-credo/alert.jpg);
+}
+.combine{
+    background-image: url(../../../../assets/dropdown-image/busines/combine.jpg);
 }
 .img-descr{
     color: white;
@@ -432,14 +434,13 @@
 }
 
 .photo-career1{
-    background-image: url(https://credobank.ge/app/uploads/2018/12/kredo-1-1.jpg);
+    background-image: url(../../../../assets/dropdown-image/career/computers.jpg);
 }
 .photo-career2{
-    background-image: url(https://credobank.ge/app/uploads/2018/12/job-fair-2-2.jpg);
+    background-image: url(../../../../assets/dropdown-image/career/people.jpg);
 }
 .photo-career3{
-    background-image: url(https://credobank.ge/app/uploads/2018/12/kariera-mega-menu-2.jpg
-    );
+    background-image: url(../../../../assets/dropdown-image/career/trophy.jpg);
 }
 
 .span-after:hover::after {

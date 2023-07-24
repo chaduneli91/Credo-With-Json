@@ -80,22 +80,22 @@
         
         <nav  class="nav-primary ">
                 <ul class="navigation-ul" >
-                    <li class="nav-li">
+                    
                         <li class="nav-li content ">
                             <a class="nav-a">კრედოს შესახებ</a>
 
                         <ul class="dropdown-1 ">
 
                                 <div class="menu-image-container">
-                                <a class="bg-cover photo1 shared" href="">
+                                <a class="bg-cover piggy shared" href="">
                                         <div class="credo-background"></div>
                                         <h4 class="img-descr">დეპოზიტები</h4>
                                     </a>
-                                    <a  class="bg-cover photo2 shared"  href="">
+                                    <a  class="bg-cover keyboard shared"  href="">
                                         <div class="credo-background"></div>
                                         <h4 class="img-descr">ინტერნეტ ბანკი</h4>
                                     </a>
-                                    <a  class="bg-cover photo3 shared"  href="">
+                                    <a  class="bg-cover alert shared"  href="">
                                         <div class="credo-background"></div>
                                         <h4 class="img-descr">ტურისტული სტარტ-აპ ბიზნეს სესხი</h4>
                                     </a>
@@ -171,11 +171,11 @@
                                 <div class="vertical-border"></div>
 
                                 <div class="menu-image-container two-columns">
-                                    <a class="bg-cover photo1 shared" href="">
+                                    <a class="bg-cover keyboard shared" href="">
                                         <div class="credo-background"></div>
                                         <h4 class="img-descr">დეპოზიტები</h4>
                                     </a>
-                                    <a  class="bg-cover photo2 shared"  href="">
+                                    <a  class="bg-cover piggy shared"  href="">
                                         <div class="credo-background"></div>
                                         <h4 class="img-descr">ინტერნეტ ბანკი</h4>
                                     </a>
@@ -505,23 +505,387 @@
                     </ul>
 
                 <ul class="navigation-ul">
-                        <li class="nav-li">
-                            <a class="nav-a">ბიზნესი</a>
+                    <li class="content" (mouseenter)="setSubMenu('menu1')">
+                        <a class="nav-a " > ბიზნესი </a>
 
-                        </li>
+                        <ul class="dropdown-1 ">
+
+                            <div class="vertical-border"></div>
+
+                            <div class="menu-image-container two-columns">
+                                <a class="bg-cover alert shared" href="">
+                                    <div class="credo-background"></div>
+                                    <h4 class="img-descr">ტურისტული სტარტაპ ბიზნეს სესხი</h4>
+                                </a>
+                                <a  class="bg-cover combine shared"  href="">
+                                    <div class="credo-background"></div>
+                                    <h4 class="img-descr">შეღავათიანი აგროკრედიტი</h4>
+                                </a>
+                            </div>
+
+                            <a class="bottom-container " href="">
+                                <h4 class="display-f">
+                                    <span class="dropdown-text">დაწვრილებითი ინფორმაციისთვის დაგვიკავშირდით</span>
+                                    <span class="icon-arrow"></span>
+                                </h4>
+                            </a>
+
+                                <li class="list-item" [ngClass]="{active: activeSubMenu == 'menu1'}" (mouseenter)="setSubMenu('menu1')">
+                                    <a >
+                                        <span class="span-text span-after">სესხები</span>
+                                    </a>
+                                    <ul class="first-list-item">
+                                        <li >
+                                            <a href="">
+                                                <span class="span-text">საკრედიტო ბარათი VISA</span>
+                                            </a>
+                                        </li>
+                                        <li class="right-li-section">
+                                            <a href="">
+                                                <span class="span-text">ბიზნეს სესხი</span>
+                                            </a>
+                                        </li>
+                                        <li class="test">
+                                            <a href="">
+                                                <span class="span-text">სამომხმარებლო სესხი</span>
+                                            </a>
+                                        </li>
+                                        <li class="right-li-section">
+                                            <a href="">
+                                                <span class="span-text">სესხი ონლაინ</span>
+                                            </a>
+                                        </li>
+                                        <li class="right-li-section">
+                                            <a href="">
+                                                <span class="span-text">ავტო ლომბარდი</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="list-item" [ngClass]="{active: activeSubMenu == 'menu2'}" (mouseenter)="setSubMenu('menu2')">
+                                    <a>
+                                        <span class="span-text span-after">განვადება</span>
+                                    </a>
+                                    <ul class="display-no">
+                                        <li>
+                                            <a href="">
+                                                <span class="span-text">სამომხმარებლო განვადება</span>
+                                            </a>
+                                        </li>
+                                        <li class="right-li-section">
+                                            <a href="">
+                                                <span class="span-text">აგრო განვადება</span>
+                                            </a>
+                                        </li>
+                                        <li class="right-li-section">
+                                            <a href="">
+                                                <span class="span-text">იაფი აგრო განვადება</span>
+                                            </a>
+                                        </li>
+                                        <li class="right-li-section">
+                                            <a href="">
+                                                <span class="span-text">ონლაინ განვადება</span>
+                                            </a>
+                                        </li>
+                                        <li class="right-li-section">
+                                            <a href="">
+                                                <span class="span-text">ონლაინ აგრო განვადება</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="list-item" [ngClass]="{active: activeSubMenu == 'menu3'}" (mouseenter)="setSubMenu('menu3')">
+                                    <a>
+                                        <span class="span-text span-after">ბარათები</span>
+                                    </a>
+                                    <ul class="display-no">
+                                        <li >
+                                            <a href="">
+                                                <span class="span-text">ციფრული ბარათი</span>
+                                            </a>
+                                        </li>
+                                        <li class="right-li-section">
+                                            <a href="">
+                                                <span class="span-text">VISA პლატინუმ ბარათი</span>
+                                            </a>
+                                        </li>
+                                        <li class="right-li-section">
+                                            <a href="">
+                                                <span class="span-text">MASTERCARD ბარათი</span>
+                                            </a>
+                                        </li>
+                                        <li class="right-li-section">
+                                            <a href="">
+                                                <span class="span-text">მოსავლის ბარათი</span>
+                                            </a>
+                                        </li>
+                                        <li class="right-li-section">
+                                            <a href="">
+                                                <span class="span-text">კონვერტაციის სქემა</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="list-item" [ngClass]="{active: activeSubMenu == 'menu4'}" (mouseenter)="setSubMenu('menu4')">
+                                    <a>
+                                        <span class="span-text span-after">დაზღვევა</span>
+                                    </a>
+                                    <ul class="display-no">
+                                        <li >
+                                            <a href="">
+                                                <span class="span-text">მოსავლის დაზღვევა</span>
+                                            </a>
+                                        </li>
+                                        <li class="right-li-section">
+                                            <a href="">
+                                                <span class="span-text">მსხვილფეხა რქოსანი პირუტყვის დაზღვევა</span>
+                                            </a>
+                                        </li>
+                                        <li class="right-li-section">
+                                            <a href="">
+                                                <span class="span-text">ქონების დაზღვევა</span>
+                                            </a>
+                                        </li>
+                                        <li class="right-li-section">
+                                            <a href="">
+                                                <span class="span-text">ავტო-დაზღვევის პაკეტები (CASCO / TPL)</span>
+                                            </a>
+                                        </li>
+                                        <li class="right-li-section">
+                                            <a href="">
+                                                <span class="span-text">ჯანმრთელობის დაზღვევა - საერთო</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="list-item" [ngClass]="{active: activeSubMenu == 'menu5'}" (mouseenter)="setSubMenu('menu5')">
+                                    <a>
+                                        <span class="span-text span-after">სტარტ-აპ სესხები</span>
+                                    </a>
+                                    <ul class="display-no list-child">
+                                        <li >
+                                            <a href="">
+                                                <span class="span-text">მარტივი START-UP სესხი</span>
+                                            </a>
+                                        </li>
+                                        <li class="right-li-section">
+                                            <a href="">
+                                                <span class="span-text">სტარტ-აპ ბიზნეს სესხი</span>
+                                            </a>
+                                        </li>
+                                        <li class="right-li-section">
+                                            <a href="">
+                                                <span class="span-text">ტურისტული სტარტ-აპ ბიზნეს სესხი</span>
+                                            </a>
+                                        </li>
+                                    
+                                    </ul>
+                                </li>
+                                <li class="list-item" [ngClass]="{active: activeSubMenu == 'menu6'}" (mouseenter)="setSubMenu('menu6')">
+                                    <a>
+                                        <span class="span-text span-after">ფულადი გზავნილები</span>
+                                    </a>
+                                    <ul class="display-no list-child">
+                                        <li >
+                                            <a href="">
+                                                <span class="span-text">საერთაშორისო გზავნილები</span>
+                                            </a>
+                                        </li>
+                                        <li class="right-li-section">
+                                            <a href="">
+                                                <span class="span-text">ლოკალური გზავნილები</span>
+                                            </a>
+                                        </li>
+                                    
+                                        
+                                    </ul>
+                                </li>
+                                <li class="list-item" [ngClass]="{active: activeSubMenu == 'menu7'}" (mouseenter)="setSubMenu('menu7')">
+                                    <a>
+                                        <span class="span-text span-after">ანაბრები</span>
+                                    </a>
+                                    <ul class="display-no list-child">
+                                        <li >
+                                            <a href="">
+                                                <span class="span-text">ვადიანი ანაბარი</span>
+                                            </a>
+                                        </li>
+                                        <li class="right-li-section">
+                                            <a href="">
+                                                <span class="span-text">ზრდადი ანაბარი</span>
+                                            </a>
+                                        </li>
+                                        <li class="right-li-section">
+                                            <a href="">
+                                                <span class="span-text">მიზნობრივი ანაბარი</span>
+                                            </a>
+                                        </li>
+                                        <li class="right-li-section">
+                                            <a href="">
+                                                <span class="span-text">მოთხოვნამდე ანაბარი</span>
+                                            </a>
+                                        </li>
+                                        <li class="right-li-section">
+                                            <a href="">
+                                                <span class="span-text">საბავშვო ანაბარი</span>
+                                            </a>
+                                        </li>
+                                        <li class="right-li-section">
+                                            <a href="">
+                                                <span class="span-text">კლებადი Smart ანაბარი</span>
+                                            </a>
+                                        </li>
+                                        <li class="right-li-section">
+                                            <a href="">
+                                                <span class="span-text">ერთობლივი ანაბარი</span>
+                                            </a>
+                                        </li>
+                                        <li class="right-li-section">
+                                            <a href="">
+                                                <span class="span-text">სადეპოზიტო სერტიფიკატი</span>
+                                            </a>
+                                        </li>
+                                        <li class="right-li-section">
+                                            <a href="">
+                                                <span class="span-text">ანაბრების განაკვეთების არქივი</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="list-item" [ngClass]="{active: activeSubMenu == 'menu8'}" (mouseenter)="setSubMenu('menu8')">
+                                    <a>
+                                        <span class="span-text span-after">ანგარიშები</span>
+                                    </a>
+                                    <ul class="display-no list-child">
+                                        <li >
+                                            <a href="">
+                                                <span class="span-text">მიმდინარე ანგარიში</span>
+                                            </a>
+                                        </li>
+                                        
+                                    </ul>
+                                </li>
+                               
+                                
+
+
+
+
+                        </ul>
+
+
+                    </li>
                     </ul>
 
                 <ul class="navigation-ul">
-                        <li class="nav-li">
+                        <li class="nav-li content ">
                             <a class="nav-a pointer">კრედოს რჩეული</a>
 
                         </li>
                     </ul>
 
-                <ul class="navigation-ul">
+                <ul class="navigation-ul" >
+                    
+                        <li class="nav-li content ">
+                            <a class="nav-a">კარიერა</a>
+
+                        <ul class="dropdown-1 ">
+
+                                <div class="menu-image-container">
+                                <a class="bg-cover photo-career1 shared" href="">
+                                        <div class="credo-background"></div>
+                                        <h4 class="img-descr">ტექნოლოგიური სივრცე</h4>
+                                    </a>
+                                    <a  class="bg-cover photo-career2 shared"  href="">
+                                        <div class="credo-background"></div>
+                                        <h4 class="img-descr">დასაქმების ფორუმი</h4>
+                                    </a>
+                                    <a  class="bg-cover photo-career3 shared"  href="">
+                                        <div class="credo-background"></div>
+                                        <h4 class="img-descr">ჯილდო დასაქმებაში შეტანილი წვლილისთვის</h4>
+                                    </a>
+                                </div>
+
+                                <a class="bottom-container " href="">
+                                    <h4 class="display-f">
+                                        <span class="dropdown-text">დაწვრილებითი ინფორმაციისთვის დაგვიკავშირდით</span>
+                                        <span class="icon-arrow"></span>
+                                    </h4>
+                                </a>
+
+                                    <li class="list-item">
+                                        <a>
+                                            <span class="span-text">მისია და ფასეულობები</span>
+                                        </a>
+                                    </li>
+                                    <li class="list-item">
+                                        <a>
+                                            <span class="span-text">მფლობელები</span>
+                                        </a>
+                                    </li>
+                                    <li class="list-item">
+                                        <a>
+                                            <span class="span-text">სამეთვალყურეო საბჭო</span>
+                                        </a>
+                                    </li>
+                                    <li class="list-item">
+                                        <a>
+                                            <span class="span-text">მენეჯმენტის გუნდი</span>
+                                        </a>
+                                    </li>
+                                    <li class="list-item">
+                                        <a>
+                                            <span class="span-text">ფინანსური მაჩვენებლები</span>
+                                        </a>
+                                    </li>
+                                    <li class="list-item">
+                                        <a>
+                                            <span class="span-text">სოციალური პასუხისმგებლობა</span>
+                                        </a>
+                                    </li>
+                                    <li class="list-item">
+                                        <a>
+                                            <span class="span-text">ისტორია</span>
+                                        </a>
+                                    </li>
+                                    <li class="list-item">
+                                        <a>
+                                            <span class="span-text">მედია ოთახი</span>
+                                        </a>
+                                    </li>
+                                    <li class="list-item">
+                                        <a>
+                                            <span class="span-text">აქციონერთა საერთო კრება</span>
+                                        </a>
+                                    </li>
+
+
+
+
+                            </ul>
+
+                        </li>
+                    </ul>    
+                <!-- <ul class="navigation-ul">
                         <li class="nav-li content">
                             <a class="nav-a">კარიერა</a>
-    <!--
+                        </li>
+                </ul>
+            -->
+
+        </nav>
+        
+
+    </div>
+
+
+</div>
+
+
+
+
+ <!--
 
                             <ul class="dropdown-1 directive">
 
@@ -575,17 +939,3 @@
 
                             </ul>
                         -->
-                        </li>
-                    </ul>
-
-        </nav>
-        
-
-    </div>
-
-
-</div>
-
-
-
-
