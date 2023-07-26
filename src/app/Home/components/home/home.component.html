@@ -25,12 +25,9 @@
 
     <div class="parent-slide-credo">
 
-        <a class="special-offer-basic-image" >
-            <div class=" in-detail-special-offer-button button white">
-              <span class="in-details-spans">ვრცლად</span>
-              <span>
-                <img src="assets/HomeImage/download (2).svg" alt="">
-              </span>
+        <a class="special-offer-basic-image  " >
+            <div class=" in-detail-special-offer-button button ">
+              <span class="in-details-spans ">ვრცლად</span>
             </div>
         </a>
 
@@ -50,12 +47,12 @@
                 />
                 <c-carousel-caption class="d-flex ">
                   <h5 class="col">{{slide.subtitle}}</h5>
-                    <div class="button button-carusel">
-                      <a class="button-child-a">
-                      <span class="slide-button-text ">{{slide.title}}</span>
-                      <img src="assets/HomeImage/download (2).svg" alt="">
+                    
+                      <a class="button-red button ">
+                        <span class="in-detail">{{slide.title}}</span>
                       </a>
-                    </div>
+                      
+                    
                 </c-carousel-caption>
               </c-carousel-item>
             </c-carousel-inner>
@@ -108,27 +105,18 @@
           <time>11.10.2023</time>
             <a class="media-text1">კრედო ბანკის ახალი სერვისცენტრი <br> თბილისში, ვაზისუბანში ჯუმბერ ლეჟავას #1-ში გაიხსნა!
             </a>
-           <!-- <a class="media-text2">კრედო ბანკმა თბილისში, პირველი ექსპატ სერვისცენტრი ჭავჭავაძის #16 ნომერში გახსნა,
-              რომელიც უცხო ქვეყნის მოქალაქეებს საბანკო-საკრედიტო პროდუქტებსა და სერვისებზე 
-              ინდივიდუალურ, სრულყოფილ მომსახურებას გაუწევს.</a>
-              -->
+
           <div class="button-content">
 
-            <div class="button22 button-childd">
-              <a class="button-child-be">
-              <span class="buttons-text colo">ვრცლად</span>
-              <img src="assets/HomeImage/download (2).svg" alt="">
+              <a class="button-red button">
+              <span class="in-detail">ვრცლად</span>
               </a>
-            </div>
-            
-            <div class="button22 button-chil">
-              <a class="button-child-be">
-              <span class="button-text2">ყველა სიახლე</span>
-              <img src="assets/HomeImage/download (2).svg" alt="">
+        
+              <a class="news-button button">
+              <span class="all-news">ყველა სიახლე</span>
               </a>
-            </div>
-
           </div>
+
         </div>
         <div class="photo-container">
           <div class="credo-image"></div>
@@ -139,13 +127,15 @@
     </div>
 
 
-    <div class="news-container-right">
+  <div class="news-container-right">
       <h3 class="media-room">ვალუტის კურსი</h3>
     <div class="currency-container">
 
     
     <div class="menu-container">
-      <div class="menu-toggler" (click)="toggleMenu()" >კრედო ბანკის კომერციული კურსი</div>
+      <div class="menu-toggler" (click)="toggleMenu()" >
+        <span class="credo-course">კრედო ბანკის კომერციული კურსი</span>
+      </div>
       <div class="menu" *ngIf="isMenuOpened">
           <div class="menu-item">
               <a > 

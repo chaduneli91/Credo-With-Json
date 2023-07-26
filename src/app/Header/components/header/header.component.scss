@@ -226,9 +226,10 @@
     color: #fff !important;
     padding: 0 3.5em;
     align-items: center;
-    font-family: "BPG WEB 001 Caps", sans-serif;
+    
     font-size: 1em;
 }
+
 
 .content:hover {
   .nav-a {
@@ -541,6 +542,82 @@
     .mobile-menu{
         display: none;
     }
+
+
+
+    @media screen and (max-width: 1366px) {
+        .header-basic-container{
+            height: 5rem;
+        }
+        .header-li{
+            font-size: 0.83em;
+            
+        } 
+        .header-second-section{
+            gap: 1rem;
+        }
+        .header-ul{
+            padding: 0.6rem;
+        }
+        .languages{
+            gap: 0.3rem;
+        }
+        .lang{
+            padding: 1.5px;
+            font-size: 0.8rem;
+        }
+        .eng{
+            padding-top: 3px;
+        }
+        .menu-toggler{
+            font-size: 0.9em;
+        }
+
+        /*  bottom haader */
+
+        .primary-menu{
+            height: 3.4rem;
+        }
+        .nav-primary{
+            padding: 0 7.125em;
+        }
+        .nav-li:hover ul {
+            left: 7.125em;
+            border: none;
+            right: 7.125em;
+            width: 83.4%;
+        }
+        .content:hover ul {
+            left: 7.125em;
+        }
+        .nav-a{
+            padding: 0 3.125em;
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     @media screen and (max-width: 760px) {
 

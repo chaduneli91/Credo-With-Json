@@ -137,6 +137,32 @@
 }
 
 
+@media screen and (max-width: 1366px) {
+    .item{
+        line-height: 1.4em;
+    }
+    padd{
+        padding: 0 7.125em;
+    }
+    .footer-content{
+        padding-left: 7.125em;
+    }
+    .white{
+        font-size: 0.84em;
+    }
+    .footer-content{
+        flex-wrap: wrap;
+        padding: 0 0 0 7.152em;
+    }
+    .footer-content{
+        justify-content: normal;
+    }
+    .right{
+        //padding-right: 0;
+        margin-left: 1.3em;
+    }
+
+}
 
 
 
