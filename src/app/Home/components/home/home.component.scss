@@ -903,7 +903,7 @@
     }
     
     .course{
-        width: 29%;
+        width: 40%;
         & > div {
             width: 29%;
         }
@@ -914,8 +914,9 @@
             width: 34%;
         }
         & > :nth-child(2) {
-            width: 20%;
+            width: 29%;
         }
+        
     }
     .help-desc{
         display: none;
@@ -959,7 +960,14 @@
             margin-bottom: -3.5em !important;
         }
     }
+
+    .col{
+        font-size: 0.9em;
+        height: 3em !important;
+       
+    }
+    .carousel-caption{
+        left: 1em;
+        right: 1em;
+    }
 }
-
-
-  
