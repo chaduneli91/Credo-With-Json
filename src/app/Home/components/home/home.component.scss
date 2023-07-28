@@ -849,7 +849,7 @@
     .parent-slide-credo{
         display: flex;
         flex-wrap: wrap;
-       padding: 0 2em;
+       padding: 0 1em;
         height: auto;
         margin: 4em 0 2em 0 ;
     }
@@ -863,7 +863,7 @@
         width: 100%;
         height: 100vw;
         margin-bottom: 1.5em;
-        //
+        
     }
     
     .news-section{
@@ -957,13 +957,17 @@
         }
      }
      ::ng-deep { .carousel-dark .carousel-indicators {
-            margin-bottom: -3.5em !important;
+            margin-bottom: -2.5em !important;
+            & > .ng-star-inserted {
+                width: 10px;
+                color: #ea4b37 !important;
+            }
         }
     }
 
     .col{
         font-size: 0.9em;
-        height: 3em !important;
+        height: 4em !important;
        
     }
     .carousel-caption{
