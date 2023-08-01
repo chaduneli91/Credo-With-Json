@@ -543,6 +543,41 @@
         display: none;
     }
 
+    @media screen and (max-width: 1800px) {
+        .nav-primary{
+            padding: 0 10em;
+        }
+        .nav-li:hover ul {
+            left: 10em;
+            right: 10em;
+            width: auto;
+        }
+        .content:hover ul {
+            left: 10em;
+            right: 10em;
+            width: auto;
+        }
+        
+    }
+
+    @media screen and (max-width: 1600px) {
+        .nav-primary{
+            padding: 0 7.125em;
+        }
+        .nav-li:hover ul {
+            left: 7.125em;
+            right: 7.125em;
+            width: auto;
+        }
+        .content:hover ul {
+            left: 7.125em;
+            right: 7.125em;
+            width: auto;
+        }
+    }
+
+
+
 
 
     @media screen and (max-width: 1366px) {

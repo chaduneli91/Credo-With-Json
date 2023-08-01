@@ -1,6 +1,4 @@
-/*.basic-container{
-    padding-top: 9.4rem;
-}*/
+
 .credoTop{
     background-image: url(https://credobank.ge/app/uploads/2023/01/anabrebi-web-banner-2.png);
     background-size: cover ;
@@ -101,7 +99,7 @@
     width: 100%;
     height: 28vw;
     padding: 0 13.5em;
-    padding: 0 11.3%;
+    //padding: 0 11.3%;
     display: flex;
     justify-content: space-between;
     margin: 0 0 4.1em 0;
@@ -525,12 +523,18 @@
 }
 .chraxo{
     display: flex;
-    //flex-wrap: wrap;
-    gap: 3em;
     margin-bottom: 1rem;
     padding-left: 0;
     color: #9f9f9f;
-    
+    & > :nth-child(1){
+        width: 34%;
+    }
+    & > :nth-child(2){
+        width: 29%;
+    }
+    & > :nth-child(3){
+        width: 25%;
+    }
 }
 
 .currency-item{
@@ -564,11 +568,11 @@
     margin-bottom: 1.5rem;
 }
 .course{
-    gap: 3em;
-    display: flex;
-    justify-content: space-between;
+    width: 29%;
 }
-
+.third-column{
+    width: 25%;
+}
 .money-percentage{
     width: 34%;
     align-items: center;
@@ -612,9 +616,41 @@
    height: calc(27vw - 8.25em);
 }
 
-@media screen and (max-width: 1600px) {
+
+@media screen and (max-width: 1800px) {
+    .basic-list{
+        padding: 0 10em;
+    }
+    .parent-slide-credo{
+        padding: 0 10em;
+    }
     .news-section{
-        padding: 0 11.3%;
+        padding: 0 10em;
+    }
+}
+
+
+
+
+
+@media screen and (max-width: 1600px) {
+    .left-side{
+        height: 17.5em;
+    }
+    .news-container-right{
+        height: 17.5em;
+    }
+    .currency-container{
+        min-height: 17.5em;
+    }
+    .basic-list{
+        padding: 0 7.125em;
+    }
+    .parent-slide-credo{
+        padding: 0 7.125em;
+    }
+    .news-section{
+        padding: 0 7.125em;
     }
     .credo-course{
         font-size: 0.8em;
@@ -622,7 +658,27 @@
 }
 
 
-@media screen and (max-width: 1366px) {
+@media screen and (max-width: 1460px) {
+    .left-content{
+        padding: 1.5em 1.6em 0;
+    }
+    .left-side{
+        min-height: 17em;
+    }
+    .currency-container{
+        height: 17em;
+    }
+    .news-container-right{
+        min-height: 17em;
+    }
+    .chraxo-parent{
+        padding: 0.9em 1.6em 0;
+    }
+    
+    .country-img{
+        width: 1.5rem;
+    }
+
     .credoTop{
         margin-top: 8.4em;
     }
@@ -642,21 +698,14 @@
     .media-room{
         font-size: 1.1em;
     }
-    .left-side{
-        min-height: 20em;
-    }
-    .currency-container{
-        height: 20em;
-    }
+    
+    
     time{
         font-size: 0.9em;
     }
-    .chraxo{
-        gap: 1em;
-        padding-left: 0;
-    }
+    
     .money{
-        margin-bottom: 0.8em;
+        margin-bottom: 0.5em;
         font-size: 1em;
     }
     .dropdown-a{
@@ -672,33 +721,6 @@
         margin-left: 1em;
     }
 }  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 @media screen and (max-width: 1200px) {
@@ -829,6 +851,27 @@
 
 
 
+@media screen and (max-width: 970px) {
+    .photo-container{
+        display: none;
+    }
+    .left-content{
+        border-radius: 1.2em 1.2em 0 1.2em;
+    }
+    .news-container-left{
+        width: calc(60% - 1em);
+    }
+    .left-content{
+        width: 100%;
+    }
+    .news-container-right{
+        width: calc(40% - 1em);
+    }
+}
+
+
+
+
 @media screen and (max-width: 760px) {
     .basic-list{
         display: none;
@@ -849,7 +892,7 @@
     .parent-slide-credo{
         display: flex;
         flex-wrap: wrap;
-       padding: 0 1em;
+        padding: 0 1em;
         height: auto;
         margin: 4em 0 2em 0 ;
     }
@@ -885,6 +928,7 @@
         width: 100%;
         display: grid;
         justify-content: inherit;
+        height: auto;
     }
     .left-content{
         width: 100%;
@@ -902,22 +946,6 @@
         display: inline-block;
     }
     
-    .course{
-        width: 40%;
-        & > div {
-            width: 29%;
-        }
-    }
-    .chraxo{
-        gap: 0;
-        & > :nth-child(1) {
-            width: 34%;
-        }
-        & > :nth-child(2) {
-            width: 29%;
-        }
-        
-    }
     .help-desc{
         display: none;
     }
